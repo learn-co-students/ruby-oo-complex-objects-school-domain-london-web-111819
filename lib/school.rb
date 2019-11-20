@@ -21,12 +21,9 @@ class School
   end
 
   def sort
-    temp_hash={}
     @roster.each do |g, student_names|
-        temp_hash[g]=student_names.sort
-    
+      @roster[g]=student_names.sort
   end
-  temp_hash
 end
 
 end
